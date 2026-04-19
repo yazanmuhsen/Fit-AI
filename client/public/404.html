@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fit AI</title>
+    <script>
+      var path = window.location.pathname;
+      var repoName = '/Fit-AI';
+      var newPath = path.replace(repoName, '');
+      sessionStorage.setItem('redirect', newPath || '/');
+      window.location.replace(repoName + '/');
+    </script>
+  </head>
+  <body></body>
+</html>
